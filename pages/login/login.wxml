@@ -1,0 +1,21 @@
+<view id="login">
+    <van-notify id="van-notify" />
+    <view class="title">安徽省水利厅统一登录</view>
+    <view class="formWarp">
+        <view class="loginInput">
+            <view class="iconWarp"><van-icon name="friends" color="#fff" size="40rpx" /></view>
+            <input class="input" placeholder="请输入用户名" placeholder-class="inputPlaceholder" model:value="{{username}}" bindinput=""/>
+        </view>
+        <view class="loginInput">
+            <view class="iconWarp"><van-icon name="lock" color="#fff" size="40rpx" /></view>
+            <input class="input" password type="text" placeholder="请输入密码" placeholder-class="inputPlaceholder" model:value="{{password}}" bindinput=""/>
+        </view>
+
+        <button class="loginBtn confirm" disabled='{{!(username && password)}}' bindtap="login">登录</button>
+        <button class="loginBtn rest" bindtap="reset">重置</button>
+
+        <view class="wx" bindtap="tryWxAuth">
+            <van-icon name="wechat" size="30px"/>
+        </view>
+    </view>
+</view>

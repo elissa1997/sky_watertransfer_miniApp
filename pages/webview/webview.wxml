@@ -1,0 +1,4 @@
+<!--pages/webview/webview.wxml-->
+<!-- <web-view src="https://10.34.192.18:8686/miniapp/?token={{token}}" ></web-view> -->
+<web-view src="{{url}}?token={{token}}" ></web-view>
+

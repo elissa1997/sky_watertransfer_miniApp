@@ -1,0 +1,87 @@
+/* pages/bind.wxss */
+#bind{
+    background-color: #f7f8fa;
+    min-height: 100vh;
+    overflow-y: auto;
+    background-image: url('https://ahjs.skywatercloud.com/dist/images/miniAppLoginBg.jpg');
+    /* background-image: url('http://10.34.192.18:8686/dist/images/miniAppLoginBg.jpg'); */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.title {
+    margin-top: 200rpx;
+    padding: 25px 0;
+    text-align: center;
+    font-weight: 600;
+    font-size: 55rpx;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    background-image: -webkit-linear-gradient(0deg,#03aaec,#00e1ff);
+    text-shadow: 0px 0px 2px #b9f7ff31;
+}
+
+.formWarp {
+    margin-top: 50rpx;
+}
+
+.loginInput{
+    margin-top: 40rpx;
+    width: 80vw;
+    background-color: #ffffff38;
+    backdrop-filter: blur(7px);
+    border-radius: 10rpx;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconWarp {
+    width: 30%;
+    text-align: center;
+    /* padding-left: 30rpx; */
+}
+
+.input{
+    width: 70%;
+    font-size: 28.96rpx;
+    height: 98rpx;
+    line-height: 98rpx;
+}
+
+.inputPlaceholder {
+    font-size: 28.96rpx;
+    color: #ffffff9a;
+    height: 98rpx;
+    line-height: 98rpx;
+}
+
+.loginBtn {
+    margin-top: 40rpx;
+    width: 80vw;
+    /* padding: 30rpx 0; */
+    font-size: 28.96rpx;
+    height: 98rpx;
+    line-height: 98rpx;
+
+}
+
+.bind{
+    background-color: hsl(120, 75%, 39%);
+    color: #fff;
+}
+
+.bind[disabled]{
+    /*背景 hsl(*, -30%, +10%) */
+    /*白色文字 hsl(*, *, -20%) */
+    background-color: hsl(120, 45%, 49%) !important;
+    color: hsl(0, 0%, 80%) !important;
+}
